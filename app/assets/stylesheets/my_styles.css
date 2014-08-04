@@ -130,6 +130,8 @@ font-family: "News Cycle", helvetica;
 
 #tweet-results {
   font-family: "News Cycle";
+  height: 500px;
+  overflow: scroll;
 }
 
 #tweet-results > ul > li:nth-child(1n) {
