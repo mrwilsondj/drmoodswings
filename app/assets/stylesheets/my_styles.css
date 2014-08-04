@@ -118,6 +118,14 @@ font-family: "News Cycle", helvetica;
   margin-top: -5px;
 }
 
+.happy-large {
+  font-size: 50px;
+}
+
+.sad-large {
+  font-size: 50px;
+}
+
 /* friend tweet styles */
 
 #tweet-results {

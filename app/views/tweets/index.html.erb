@@ -49,8 +49,8 @@
             </div>
               <div class="col-lg-4">
                 <% if not @positivity_percentage.nil? %>
-                  <div id="positive"><h4 class="dr-moodswing">DR. MOODSWINGS says:</h4><h2><%= "#{@name}'s" %> Tweets are</h2><h1><%= "#{@positivity_percentage}%" %></h1><h2> HAPPY!</h2></div>
-                  <div id="negative"><h1><%= "#{100 - @positivity_percentage}%" %></h1><h2> are SAD.</h2></div>
+                  <div id="positive"><h4 class="dr-moodswing">DR. MOODSWINGS says:</h4><h2><%= "#{@name}'s" %> Tweets are</h2><h1><%= "#{@positivity_percentage}%" %></h1><h2 class="happy-large"> HAPPY!</h2></div>
+                  <div id="negative"><h1><%= "#{100 - @positivity_percentage}%" %></h1><h2 class="happy-large"> are SAD.</h2></div>
                   <%else%>
 <h2> Learn how your friends are feeling.</h2>
 <h4>Dr. Moodswings can perform a thorough mood sentiment analysis of your friends' Tweets.</h4>
