@@ -156,13 +156,33 @@ font-family: "News Cycle", helvetica;
 }
 
 .client-list {
- margin-left: 65px;
+ margin-left: 30px;
+}
+
+.client-list > li {
+ height: 30px;
 }
 
 .client-results {
   padding-left: 20px;
   display: inline;
   color: #B0B0B0;
+}
+
+.twitter-name{
+  display: inline;
+  color: #B0B0A7;
+  margin-left: 5px;
+  font-size: .8em;
+}
+
+.twitter-handle{
+  color: #EAF4FA;
+  display: inline;
+  color: #E0EFF8;
+  font-size: .8em;
+  letter-spacing: .2em;
+  margin-left: 3px;
 }
 
 .dummy-copy {
