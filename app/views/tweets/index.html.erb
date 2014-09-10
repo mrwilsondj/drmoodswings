@@ -23,7 +23,7 @@
       <div class="bs-docs-section">
         <div class="page-header">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-xs-4">
               <h1 id="buttons">MOOD ANALYSIS</h1>
             </div>
           </div>
@@ -32,7 +32,7 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-sm-4">
               <form method="GET" action="<%= tweets_index_url %>">
                 <% if not @error_message.nil? %>
                   <%= @error_message %>
@@ -44,7 +44,7 @@
               <!-- jquery animation loader begin -->
               <div id="topLoader"></div>
             </div>
-              <div class="col-lg-4">
+              <div class="col-sm-4">
                 <% if not @positivity_percentage.nil? %>
                   <div id="positive"><h4 class="dr-moodswing">DR. MOODSWINGS says:</h4><h2><%= "#{@name}'s" %> Tweets are</h2><h1><%= "#{@positivity_percentage}%" %></h1><h2 class="happy-large"> POSITIVE!</h2></div>
                   <div id="negative"><h1><%= "#{100 - @positivity_percentage}%" %></h1><h2 class="happy-large"> are NEGATIVE.</h2></div>
@@ -55,7 +55,7 @@
 <h6 class="dummy-copy">Just type in a valid Twitter user name and let Dr. Moodswings do all of the work. Once you get the results, you should send them a message or a gift to your friend to let you know that you took the time to check on him or her.</h6>
                 <% end %>
               </div>
-            <div id="tweet-results" class="col-lg-4">
+            <div id="tweet-results" class="col-sm-4">
               <% if not @tweets.nil? and @tweets.length > 0 %>
                 <ul>  <% @tweets.each do |tweet| %>
                     <li>  Tweeted: <%= tweet.tweet_text %> </li>
@@ -89,13 +89,13 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-sm-6">
               <blockquote>
                 <p>So many tweets. So many moods.</p>
                 <small>WILSON CHAN from <cite title="Source Title"> The WDI Corp</cite></small>
               </blockquote>
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
               <blockquote>
                 <p>I want to know what Dr. Moodswings says...</p>
                 <small>SOPHIE LAFFONT from <cite title="Source Title">WDI LLC</cite></small>
