@@ -1,3 +1,9 @@
+/* to push gradient to bottom of page */
+
+html {
+    height: 100%;
+}
+
 /* landing page styles */
 
 .therapist {
@@ -44,7 +50,7 @@ input {
 }
 
 body {
-background: rgb(32,32,32);
+background: RGB(2, 50, 50);
 background: -moz-linear-gradient(top, rgb(32,32,32) 40%, rgb(2,50,50) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(40%, rgb(32,32,32)), color-stop(100%, rgb(2,50,50)));
 background: -webkit-linear-gradient(top, rgb(32,32,32) 40%, rgb(2,50,50) 100%);
@@ -52,6 +58,10 @@ background: -o-linear-gradient(top, rgb(32,32,32) 40%, rgb(2,50,50) 100%);
 background: -ms-linear-gradient(top, rgb(32,32,32) 40%, rgb(2,50,50) 100%);
 background: linear-gradient(to bottom, rgb(32,32,32) 40%, rgb(2,50,50) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202020', endColorstr='#023232', GradientType=0 );
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6, li {
